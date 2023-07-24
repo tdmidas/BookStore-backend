@@ -1,7 +1,7 @@
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-
+const passport = require("passport");
 let refreshTokens = [];
 
 const authController = {

@@ -16,6 +16,11 @@ const userSchema = new mongoose.Schema(
 			require: true,
 			min: 6,
 		},
+		googleId: {
+			type: String,
+			required: true,
+			unique: true,
+		},
 		isAdmin: {
 			type: Boolean,
 			default: false,
